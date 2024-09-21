@@ -33,11 +33,13 @@ header {
     font-weight: 700;
 }
 
-.navbar .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
+.burger {
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+  }
+
+
 
 .navbar .nav-links li {
     display: inline;
@@ -203,4 +205,41 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+
+@media only screen and (max-width: 767px) {
+    
+
+    .navbar {
+        flex-direction: row;
+        align-items: center;
+        margin-right: 2rem;
+    }
+
+    .burger {
+        display: block;
+      }
+
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background-color: #0f0f0fbb;
+        top: 5rem;
+        width: 90%;
+        right: 1.5rem;
+        align-items: center;
+        text-align: center;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .nav-links li {
+        margin: 1rem 0;
+      }
+
+
 }
