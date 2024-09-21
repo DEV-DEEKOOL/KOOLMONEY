@@ -143,10 +143,15 @@ header {
 
 
 .testimonials {
+    align-items: center;
     padding: 80px 20px;
     background-color: #1a1a1a;
     color: #fff;
     text-align: center;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
 }
 
 .testimonials h2 {
@@ -155,15 +160,23 @@ header {
 }
 
 .testimonial-cards {
+    width: 95%;
+    height: 13rem;
     display: flex;
     justify-content: space-between;
     gap: 20px;
+    align-items: center;
 }
 
 .testimonial-card {
     background-color: #333;
-    padding: 20px;
+    width: 30vw;
+    height: 10rem;
     border-radius: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     flex: 1;
 }
 
@@ -240,6 +253,22 @@ footer p {
       .nav-links li {
         margin: 1rem 0;
       }
+      .testimonial-card {
+        font-size: 1rem;
+        height: 18rem;
+        width: 19rem;
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+      .testimonial-cards {
+        display: flex;
+        flex-direction: column;
+      }
 
+      .testimonials {
+        align-items: center;
+        height: 110vh;
+        padding-bottom: 5rem;
+      }
 
 }
